@@ -1,0 +1,86 @@
+/* General Settings */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.wrapper {
+    height: 100vh;
+    width: 80%;
+    margin: auto;
+}
+
+/* Utility */
+.m-top {
+    margin-top: 20px;
+}
+
+
+header {
+    /* Debug*/
+    height: 50px;
+    background-color: darksalmon;
+}
+
+div.main_slide {
+    /* Debug*/
+    height: 200px;
+    background-color: darkgoldenrod;
+}
+
+main {
+    /* Debug*/
+    background-color: blue;
+}
+
+/* Float Section */
+    /* display flex to stick the footer */
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    padding: 20px 0;
+}
+
+
+main {
+    margin-bottom: 10px;
+}
+main div {
+    margin-bottom: 10px;
+    float: left;
+    /* Debug*/
+    background-color: aquamarine;
+}
+main .d-head {
+    width: 100%;
+    /* Debug*/
+    height: 50px;   
+}
+/* Floating elements */
+main .d-side {
+    width: 20%;
+    /* Debug*/
+    height: 200px;  
+}
+main .d-main {
+    width: 56%;
+    margin: 0 2% 10px;
+    /* Debug*/
+    height: 200px;  
+}
+
+/* quasi-sticky footer, via display:float */
+footer {
+    margin-top:auto;
+    /* Debug*/
+    height: 30px;
+    background-color: blueviolet;
+}
+
+/* ClearFix */
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+  }

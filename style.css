@@ -3,6 +3,7 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
 }
 
 .wrapper {
@@ -13,33 +14,52 @@
 
 /* Utility */
 .m-top {
+    margin-top: 10px;
+}
+.m-top-20 {
     margin-top: 20px;
 }
-
-
-header {
-    /* Debug*/
-    height: 50px;
-    background-color: darksalmon;
+.m-top-50 {
+    margin-top: 50px;
 }
+.rounded {
+    border-radius: 2.5%;
+}
+/* Header Settings */
+
+#logo {
+    height: 50px;
+    padding-right: 20px;
+    border-right: 1px solid grey;
+}
+header ul li {
+    display: inline-block;
+    color: grey;
+    margin-right: 20px;
+}
+
+/* Main slide / Image Carousel */
 
 div.main_slide {
-    /* Debug*/
-    height: 200px;
-    background-color: darkgoldenrod;
+    height: 500px;
+    padding: 5%;
+    background-image:   
+    linear-gradient(to bottom, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+    url('img/banner.jpg');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
-
-main {
-    /* Debug*/
-    background-color: blue;
+.dida-main {
+    z-index: 10;
+    color: white;
+    margin-top: auto;
 }
-
 /* Float Section */
     /* display flex to stick the footer */
-.wrapper {
+.flex-col {
     display: flex;
     flex-direction: column;
-    padding: 20px 0;
 }
 
 
